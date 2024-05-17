@@ -5,37 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mode html saja</title>
+    <title>i love you</title>
     <link rel="stylesheet" href="css/Untitled-1.css">
+    <link rel="icon" href="img/favicon-32x32.png">
     <script>
+  
+        function love(){
+    // var ask = prompt ("did u like me?");
+    // if(ask === "yes") {
+    //     alert ("i like u too");
+    // }
+    // else{
+    //     alert("who are you?");
+    //     love()
+    //     }
         document.addEventListener('click', musicPlay);
         function musicPlay() {
-        document.getElementById('ID').play();
+        document.getElementById('player').play();
         document.removeEventListener('click', musicPlay);
 }
-        window.onload = function() {
-        var context = new AudioContext();
+    }
+    
+document.addEventListener('click', musicPlay);
+function musicPlay() {
+document.getElementById('player').play();
+document.removeEventListener('click', musicPlay);
 }
-            function love(){
-            var ask = prompt ("did u like me?")
-            alert ("i like u too");
-        }
 
-        love();
+   
+
+    
+love();
     </script>
 </head>
+
 <body>
-    <audio id="player" autoplay loop>
-        <source src="sounds/i like you.ogg" type="audio/mp3">
-    </audio>
-    <h1>i love you adel</h1>
-    <img src="img/love.png" alt="">
-    <h2>i just want you to know that i love you <3 </h2>
     
+    <audio id="player" autoplay loop>
+        <source src="sounds/i like you.ogg" type="audio/ogg">
+    </audio>
+    <div class="paragraf">
+    <h1 id="asek">oma omaga <3</h1>
+    <h1>click down here</h1>
+    <img id="click" src="img/love.png" alt="">
+    <h2 id="gombalan">i just want you to know that i love you <3 </h2> 
+        
+        <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </div>
+   
 </body>
 
 </html>
 
 
 </div>
-
